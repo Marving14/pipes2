@@ -6,10 +6,9 @@ class PrintList
 {
     public:
         PrintList(stringstream &ss);
-         stringstream input;
     protected:
-
     private:
+        stringstream inputM;
 
 };
 
