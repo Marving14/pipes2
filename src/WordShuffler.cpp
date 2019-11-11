@@ -1,4 +1,4 @@
-#include "WordShuffler.h"
+#include "../include/WordShuffler.h"
 
 WordShuffler::WordShuffler()
 {
