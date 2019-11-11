@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1573440122 source:c:\users\marving r\documents\pipes2\main.cpp
+	<iostream>
+	"WordShuffler.h"
+
+1573440112 source:c:\users\marving r\documents\pipes2\src\wordshuffler.cpp
+	"WordShuffler.h"
+
+1573439097 c:\users\marving r\documents\pipes2\include\wordshuffler.h
+	<string>
+	<bits/stdc++.h>
+
