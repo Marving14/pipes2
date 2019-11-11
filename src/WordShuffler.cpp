@@ -1,8 +1,8 @@
-#include "../include/WordShuffler.h"
+#include "WordShuffler.h"
 
-WordShuffler::WordShuffler()
+WordShuffler::WordShuffler(stringstream &ss)
 {
-    //ctor
+    input << ss.str();
 }
 
 string str_last_word(string &str){
@@ -14,25 +14,25 @@ string str_last_word(string &str){
     else
         return "";
 }
-
-string WordShuffler::GetLastWord(string sentence){
+/*
+string WordShuffler::GetLastWord( ){
    // printf(str_last_word(sentence));
-    return str_last_word(sentence);
+    return str_last_word( input.str() );
+}
+*/
+string WordShuffler::ReorderedSentence( ){
+
+    string line;
+    getline(input, line);
+
+    string last= str_last_word( line );
+
+    int a = line.find(last);
+    line = line.substr(0, a);
+
+    output << last +" "+ line;
+
+    return output.str();
 }
 
-string WordShuffler::ReorderedSentence(string sentence){
-    string last= GetLastWord(sentence);
 
-    int a = sentence.find(last);
-    sentence = sentence.substr(0, a);
-
-    string tail = last +" "+ sentence;
-
-    return tail;
-}
-
-
-WordShuffler::~WordShuffler()
-{
-    //dtor
-}
