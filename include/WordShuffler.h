@@ -2,6 +2,7 @@
 #define WORDSHUFFLER_H
 #include <string>
 #include <bits/stdc++.h>
+#include <iostream>
 
 
 using namespace std;
@@ -9,15 +10,17 @@ using namespace std;
 class WordShuffler
 {
     public:
-        WordShuffler();
-        string GetLastWord(string sentence);
-        string ReorderedSentence(string sentence);
+        WordShuffler(stringstream &ss);
+       // string GetLastWord();
+        string ReorderedSentence();
 
-        virtual ~WordShuffler();
+
 
     protected:
 
     private:
+        stringstream input;
+        stringstream output;
 };
 
 #endif // WORDSHUFFLER_H
