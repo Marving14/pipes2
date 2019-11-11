@@ -13,7 +13,7 @@ int contar(string Frase) {
             break;
         totalP++;
     }
-    return totalP + 1;
+    return totalP;
 }
 
 
@@ -45,7 +45,7 @@ string WordShuffler::ReorderedSentence( ){
             string last = str_last_word(line);
 
             int a = line.find(last);
-            line = last + " " + line.substr(0, a);
+            line = last + " " + line.substr(0, a-1);
 
             output << line << endl; //rotaciones
         }

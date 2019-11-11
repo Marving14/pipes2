@@ -25,14 +25,14 @@ int main()
 	ss.str("");
 	ss << shuffler.ReorderedSentence();
 
-	cout << ss.str();
+	//cout << ss.str();
 
 	//sort list
 	SortList sorter(ss);
 	ss.str("");
 	ss << sorter.filter();
 
-	//cout << ss.str();
+	cout << ss.str();
 
     return 0;
 }
