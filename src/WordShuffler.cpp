@@ -42,7 +42,7 @@ string WordShuffler::ReorderedSentence( ){
         int a = line.find(last);
         line = line.substr(0, a);
 
-        output << last +" "+ line;
+        output << last +" "+ line + "\n";
     }
 
 
