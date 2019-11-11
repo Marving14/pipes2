@@ -3,6 +3,7 @@
 	<FileVersion major="1" minor="6" />
 	<Project>
 		<Option title="pipes2" />
+		<Option makefile="makefile" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
@@ -34,8 +35,12 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/PrintList.h" />
+		<Unit filename="include/SortList.h" />
 		<Unit filename="include/WordShuffler.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/PrintList.cpp" />
+		<Unit filename="src/SortList.cpp" />
 		<Unit filename="src/WordShuffler.cpp" />
 		<Extensions>
 			<code_completion />
