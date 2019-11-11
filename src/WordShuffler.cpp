@@ -1,4 +1,4 @@
-#include "WordShuffler.h"
+#include "../include/WordShuffler.h"
 
 WordShuffler::WordShuffler(stringstream &ss)
 {
@@ -34,7 +34,7 @@ string WordShuffler::GetLastWord( ){
 string WordShuffler::ReorderedSentence( ){
 
     string line;
-    getline(input, line)
+    getline(input, line);
 
     for(int i=0; i< contar(line); i++){
         string last= str_last_word( line );

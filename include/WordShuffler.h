@@ -1,9 +1,8 @@
 #ifndef WORDSHUFFLER_H
 #define WORDSHUFFLER_H
 #include <string>
-#include <bits/stdc++.h>
 #include <iostream>
-
+#include <sstream>
 
 using namespace std;
 
@@ -13,10 +12,6 @@ class WordShuffler
         WordShuffler(stringstream &ss);
        // string GetLastWord();
         string ReorderedSentence();
-
-
-
-    protected:
 
     private:
         stringstream input;
