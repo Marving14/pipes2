@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1573448699 source:c:\users\marving r\documents\pipes2\main.cpp
+1573449683 source:c:\users\marving r\documents\pipes2\main.cpp
 	<iostream>
 	<string>
 	"include/SortList.h"
@@ -8,16 +8,16 @@
 1573448613 source:c:\users\marving r\documents\pipes2\src\wordshuffler.cpp
 	"WordShuffler.h"
 
-1573448613 c:\users\marving r\documents\pipes2\include\wordshuffler.h
+1573449683 c:\users\marving r\documents\pipes2\include\wordshuffler.h
 	<string>
 	<bits/stdc++.h>
 	<iostream>
 
-1573448613 source:c:\users\marving r\documents\pipes2\src\sortlist.cpp
+1573449683 source:c:\users\marving r\documents\pipes2\src\sortlist.cpp
 	"../include/SortList.h"
 	<iostream>
 	<vector>
 
-1573448613 c:\users\marving r\documents\pipes2\include\sortlist.h
+1573449683 c:\users\marving r\documents\pipes2\include\sortlist.h
 	<sstream>
 

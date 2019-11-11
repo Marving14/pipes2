@@ -4,6 +4,17 @@ WordShuffler::WordShuffler(stringstream &ss)
 {
     input << ss.str();
 }
+int contar(string Frase) {
+    int NumPos = -1;
+    int totalP = 0;
+    while(1) {
+        NumPos = Frase.find(' ', NumPos + 1);
+        if (NumPos == -1) break;
+        totalP++;
+    }
+    return totalP;
+}
+
 
 string str_last_word(string &str){
 
@@ -23,14 +34,18 @@ string WordShuffler::GetLastWord( ){
 string WordShuffler::ReorderedSentence( ){
 
     string line;
-    getline(input, line);
+    getline(input, line)
 
-    string last= str_last_word( line );
+    for(int i=0; i< contar(line); i++){
+        string last= str_last_word( line );
 
-    int a = line.find(last);
-    line = line.substr(0, a);
+        int a = line.find(last);
+        line = line.substr(0, a);
 
-    output << last +" "+ line;
+        output << last +" "+ line;
+    }
+
+
 
     return output.str();
 }
