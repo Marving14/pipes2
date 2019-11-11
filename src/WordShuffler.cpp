@@ -9,10 +9,11 @@ int contar(string Frase) {
     int totalP = 0;
     while(1) {
         NumPos = Frase.find(' ', NumPos + 1);
-        if (NumPos == -1) break;
+        if (NumPos == -1) 
+            break;
         totalP++;
     }
-    return totalP;
+    return totalP + 1;
 }
 
 
@@ -34,18 +35,21 @@ string WordShuffler::GetLastWord( ){
 string WordShuffler::ReorderedSentence( ){
 
     string line;
-    getline(input, line);
+    while (getline(input, line)) {
+        if (line == "")
+            break;
 
-    for(int i=0; i< contar(line); i++){
-        string last= str_last_word( line );
+        output << line << endl; //para la original
 
-        int a = line.find(last);
-        line = line.substr(0, a);
+        for(int i=0; i<contar(line); i++){
+            string last = str_last_word(line);
 
-        output << last +" "+ line + "\n";
+            int a = line.find(last);
+            line = last + " " + line.substr(0, a);
+
+            output << line << endl; //rotaciones
+        }
     }
-
-
 
     return output.str();
 }

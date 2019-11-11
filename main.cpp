@@ -22,14 +22,14 @@ int main()
 
 	//cycle words
 	WordShuffler shuffler(ss);
-	ss.flush();
+	ss.str("");
 	ss << shuffler.ReorderedSentence();
 
 	cout << ss.str();
 
 	//sort list
 	SortList sorter(ss);
-	ss.flush();
+	ss.str("");
 	ss << sorter.filter();
 
 	//cout << ss.str();
